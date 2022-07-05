@@ -208,6 +208,10 @@ p {
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
+
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover,
@@ -241,6 +245,10 @@ p {
     display: flex;
     align-items: center;
     color: var(--secondary-text-color);
+
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel:hover,
@@ -479,6 +487,10 @@ p {
     color: #afb1b8;
     background-color: #FFFFFF;
     border-radius: 50%;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
@@ -517,6 +529,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list {
@@ -587,6 +603,10 @@ p {
     line-height: 1.7;
     color: var(--footer-text);
     font-style: normal;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-map-link:hover,
@@ -599,6 +619,10 @@ p {
     letter-spacing: 0.02em;
     color: var(--footer-text-color);
     font-style: normal;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:hover,
@@ -610,6 +634,10 @@ p {
     line-height: 1.7;
     color: var(--footer-text-color);
     font-style: normal;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel:hover,
@@ -661,6 +689,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-us-icon {
