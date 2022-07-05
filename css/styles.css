@@ -216,19 +216,16 @@ p {
 }
 
 .mail-icon {
-    fill: #757575;
+    fill: currentColor;
     margin-right: 10px;
     height: 12px;
 }
 
 .phone-icon {
-    fill: #757575;
+    fill: currentColor;
     margin-right: 10px;
 }
 
-.header-mail:hover .mail-icon {
-    fill: var(--link-color)
-}
 
 .header-mail:focus .mail-icon {
     fill: var(--link-color)
@@ -251,9 +248,6 @@ p {
     color: var(--link-color);
 }
 
-.header-tel:hover .phone-icon {
-    fill: var(--link-color)
-}
 
 .header-tel:focus .phone-icon {
     fill: var(--link-color)
@@ -364,6 +358,7 @@ p {
 
 .works-item {
     margin-right: var(--list-right-margin);
+    position: relative;
 }
 
 .works-item:last-child {
