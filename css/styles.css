@@ -191,8 +191,6 @@ p {
 }
 
 .header-contact-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-right: 50px;
 }
 
@@ -208,6 +206,7 @@ p {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--secondary-text-color);
+    display: flex;
     align-items: center;
 }
 
@@ -225,7 +224,6 @@ p {
 .phone-icon {
     fill: #757575;
     margin-right: 10px;
-    height: 16px;
 }
 
 .header-mail:hover .mail-icon {
@@ -243,6 +241,7 @@ p {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;
     align-items: center;
     color: var(--secondary-text-color);
 }
