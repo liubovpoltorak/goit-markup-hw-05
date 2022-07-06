@@ -485,10 +485,9 @@ p {
     width: 44px;
     height: 44px;
     color: #afb1b8;
-    background-color: #FFFFFF;
     border-radius: 50%;
 
-    transition-property: background-color, fill;
+    transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -524,13 +523,13 @@ p {
     height: 92px;
     padding: 16px 32px;
     border: 1px solid #AFB1B8;
-    color: #2196F3;
+    color: #AFB1B8;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    transition-property: border, fill;
+    transition-property: border, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -544,12 +543,17 @@ p {
     margin-right: 30px;
 }
 
+.clients-icon {
+    fill: currentColor;
+}
+
 .clients-item:last-child {
     margin-right: 0px;
 }
 
 .clients-links:hover {
-    border: 1px solid #2196F3
+    border: 1px solid #2196F3;
+    color: var(--bg-icon-color);
 }
 
 
@@ -690,7 +694,7 @@ p {
     justify-content: center;
     align-items: center;
 
-    transition-property: background-color, fill;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -704,9 +708,6 @@ p {
     background-color: var(--bg-icon-color);
 }
 
-.join-us-link:hover .join-us-icon {
-    fill: #ffffff;
-}
 
 .join-us-link:focus .join-us-icon {
     fill: #ffffff;
@@ -805,8 +806,9 @@ p {
     margin-bottom: 0;
 }
 
-.services-link:hover .services-decor-text {
-    transform: translateY(-100%);
+.services-link:hover .services-decor-text,
+.services-link:focus .services-decor-text {
+    transform: translateY(0);
 }
 
 .services-img-decor {
@@ -817,6 +819,7 @@ p {
 
 .services-decor-text {
     position: absolute;
+    bottom: 0;
     height: 100%;
     padding: 63px 24px;
     font-size: 18px;
